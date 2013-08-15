@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Storify</title>
+    <style type="text/css">
+      body {
+        background: url(http://subtlepatterns.com/patterns/darkdenim3.png);
+      }
+      a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -62px;
+        margin-top: -22px;
+        display: inline-block;
+        color: #333;
+        text-decoration: none;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        border-radius: 22px;
+        border: 2px solid #333;
+        text-align: center;
+        font-family: "Helvetica", serif;
+        font-weight: bold;
+        text-shadow: 0 1px 0 #fff;
+        background: #eee; /* Old browsers */
+        background: -moz-linear-gradient(top,  #eee 0%, #ddd 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eee), color-stop(100%,#ddd)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #eee 0%,#ddd 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #eee 0%,#ddd 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #eee 0%,#ddd 100%); /* IE10+ */
+        background: linear-gradient(top,  #eee 0%,#ddd 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eee', endColorstr='#ddd',GradientType=0 ); /* IE6-9 */
+      }
+      a:hover {
+        color: #000;
+        border-color: #000;
+      }
+    </style>
+</head>
+<body>
+  <a href="javascript:(function(){var h=window.location.hostname;if((h=='storify.com')&&s.story){window.open(s.base_url+'/api/stories/'+s.story.path)}else{alert('The bookmarklet is only working on Storify stories!')}})();">Story JSON</a>
+</body>
+</html>
